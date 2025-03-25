@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Grocery Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Grocery Store</h1>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+    <div class="action-buttons">
+      <button id="wishlist-btn">Wishlist (<span id="wishlist-count">0</span>)</button>
+      <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+    <div id="products">
+      <!-- 10 Products -->
+      <div class="product" data-id="1" data-name="Apple" data-price="1.5">
+        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=150&h=150&fit=crop" alt="Apple">
+        <span class="wishlist-icon" data-id="1">&#9825;</span>
+        <h3>Apple</h3>
+        <p>$1.50 each</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="2" data-name="Banana" data-price="0.5">
+        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=150&h=150&fit=crop" alt="Banana">
+        <span class="wishlist-icon" data-id="2">&#9825;</span>
+        <h3>Banana</h3>
+        <p>$0.50 each</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="3" data-name="Milk" data-price="2">
+        <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=150&h=150&fit=crop" alt="Milk">
+        <span class="wishlist-icon" data-id="3">&#9825;</span>
+        <h3>Milk</h3>
+        <p>$2.00 per liter</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="4" data-name="Orange" data-price="1.0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ijbcmdEXbhr9g4epZwEC9K_HS7HI_uXN_g&s" alt="Orange">
+        <span class="wishlist-icon" data-id="4">&#9825;</span>
+        <h3>Orange</h3>
+        <p>$1.00 each</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="5" data-name="Grapes" data-price="3.0">
+        <img src="https://www.jiomart.com/images/product/original/590004004/grapes-black-pack-approx-450-g-600-g-product-images-o590004004-p590122219-0-202412181141.jpg?im=Resize=(420,420)" alt="Grapes">
+        <span class="wishlist-icon" data-id="5">&#9825;</span>
+        <h3>Grapes</h3>
+        <p>$3.00 per bunch</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="6" data-name="Bread" data-price="2.5">
+        <img src="https://theobroma.in/cdn/shop/files/WheatBreadLoaf_45e6b874-d81e-4363-9772-1f91150a34a7.jpg?v=1710837356" alt="Bread">
+        <span class="wishlist-icon" data-id="6">&#9825;</span>
+        <h3>Bread</h3>
+        <p>$2.50 per loaf</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="7" data-name="Eggs" data-price="1.8">
+        <img src="https://www.jiomart.com/images/product/original/rvfcgysdqp/styleys-egg-tray-30-eggs-airtight-storage-container-plastic-box-white-s2172-product-images-orvfcgysdqp-p591633066-0-202205271453.jpg?im=Resize=(420,420)" alt="Eggs">
+        <span class="wishlist-icon" data-id="7">&#9825;</span>
+        <h3>Eggs</h3>
+        <p>$1.80 per dozen</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="8" data-name="Cheese" data-price="4.0">
+        <img src="https://www.jiomart.com/images/product/original/rvfcgysdqp/styleys-egg-tray-30-eggs-airtight-storage-container-plastic-box-white-s2172-product-images-orvfcgysdqp-p591633066-0-202205271453.jpg?im=Resize=(420,420)" alt="Cheese">
+        <span class="wishlist-icon" data-id="8">&#9825;</span>
+        <h3>Cheese</h3>
+        <p>$4.00 per pack</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="9" data-name="Yogurt" data-price="1.2">
+        <img src="https://www.jiomart.com/images/product/original/493176691/milky-mist-natural-greek-yogurt-100-g-product-images-o493176691-p609593534-5-202407292013.jpg?im=Resize=(420,420)" alt="Yogurt">
+        <span class="wishlist-icon" data-id="9">&#9825;</span>
+        <h3>Yogurt</h3>
+        <p>$1.20 each</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product" data-id="10" data-name="Chicken" data-price="7.0">
+        <img src="https://cdn.shopify.com/s/files/1/1785/5627/products/halal_chicken_leg_quarters_1_420x.jpg?v=1578097020" alt="Chicken">
+        <span class="wishlist-icon" data-id="10">&#9825;</span>
+        <h3>Chicken</h3>
+        <p>$7.00 per kg</p>
+        <div class="btn-row">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  <div id="cart" class="sidebar">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-btn">Checkout</button>
+    <button id="close-cart">Close Cart</button>
+  </div>
+
+  <div id="wishlist" class="sidebar">
+    <h2>Your Wishlist</h2>
+    <ul id="wishlist-items"></ul>
+    <button id="close-wishlist">Close Wishlist</button>
+  </div>
+
+  <div id="checkout-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Checkout</h2>
+      <p>Total Amount: $<span id="modal-total">0.00</span></p>
+      <button id="confirm-purchase">Confirm Purchase</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
