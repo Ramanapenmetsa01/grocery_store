@@ -16,11 +16,3 @@ The Online Grocery Store is a web application built using **HTML, CSS, and JavaS
 - **CSS** – Handles the design and layout.  
 - **JavaScript** – Adds interactivity and dynamic functionalities.  
 
-## Screenshots  
-### Homepage  
-![Homepage Screenshot](screenshot-homepage.png)  
-
-### Cart and Wishlist  
-![Cart Screenshot](screenshot-cart.png)  
-
-## Folder Structure  
